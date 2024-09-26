@@ -97,7 +97,7 @@
           <a href="gallery.html">Gallery</a> |
           <a class="active text-dark" href="contact.html">Contact</a>
         </p>
-        <p class="footer-company-name">© 2024 Iyava</p>
+        <p class="footer-company-name">© 2024 Iyava .</p>
       </div>
 
       <div class="footer-center">
@@ -136,6 +136,40 @@
         </div>
       </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const nameField = form.querySelector('input[placeholder="Your Name"]');
+  const emailField = form.querySelector('input[placeholder="Your Email"]');
+  const messageField = form.querySelector('textarea[placeholder="Your Message"]');
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+    // Simple validation
+    const name = nameField.value.trim();
+    const email = emailField.value.trim();
+    const message = messageField.value.trim();
+    
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    // Email validation regex
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!email.match(emailPattern)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    alert("Thank you, " + name + "! Your message has been sent successfully.");
+    
+    form.reset();
+  });
+});
+
+    </script>
 
     <script src="js/bootstrap.min.js"></script>
   </body>
