@@ -36,6 +36,10 @@ body {
     border: none;
 }
 
+.active {
+    background-color: gold;
+}
+
 .hero {
     background-color: black;
     background-size: cover;
