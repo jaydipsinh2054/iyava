@@ -2,7 +2,7 @@
 body {
     font-family: 'Times New Roman', cursive;
     background-color: #f5f5f5;
-    color: #333;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar-brand h3 span {
-    color: lightseagreen;
+    color: gold;
 }
 
 .nav-link {
@@ -38,6 +38,9 @@ body {
 
 .active {
     background-color: gold;
+}
+.text input ::placeholder{
+    color: #000;
 }
 
 .hero {
@@ -73,7 +76,7 @@ body {
 
 .hero button {
     padding: 15px 30px;
-    background-color: lightseagreen;
+    background-color: gold;
     border: none;
     font-size: 1.2rem;
     color: white;
@@ -83,7 +86,7 @@ body {
 }
 
 .hero button:hover {
-    background-color: #1ca085;
+    background-color: gold;
 }
 
 /* About Section */
@@ -120,11 +123,12 @@ body {
 .card {
     height: 400px;
     opacity: 1;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 8px white;
 }
 
 .card-img-top {
@@ -159,7 +163,7 @@ body {
 }
 
 .contact button {
-    background-color: #25274d;
+    background-color: gold;
     color: white;
     padding: 12px 25px;
     border: none;
@@ -170,7 +174,7 @@ body {
 }
 
 .contact button:hover {
-    background-color: lightseagreen;
+    background-color: gold;
 }
 
 /* Footer Styles */
@@ -188,13 +192,36 @@ body {
     text-decoration: none;
     color: white;
 }
+.d-flex a{
+    color: white;
+    border: none;
+    background-color: #000; 
+}
+.d-flex a:hover {
+    background-color: gold;
+    border: none;
+    box-shadow: 0 0 15px black;
+    color: #000;
+}
+
+.d-flex button{
+    color: white;
+    border: none;
+    background-color: #000;
+}
+.d-flex button:hover {
+    background-color: gold;
+    border: none;
+    box-shadow: 0 0 15px black;
+    color: #000;
+}
 
 .footer-left h3 {
     font-size: 45px;
 }
 
 .footer-left h3 span {
-    color: lightseagreen;
+    color: gold;
 }
 
 .footer-company-about {
@@ -206,6 +233,7 @@ body {
     background-color: #333;
     color: white;
     width: 40px;
+    font-size: 1.5rem;
     height: 40px;
     text-align: center;
     line-height: 40px;
@@ -215,7 +243,9 @@ body {
 }
 
 .footer-icons a:hover {
-    background-color: lightseagreen;
+    font-size: 2rem;
+    color: #000;
+    background-color: gold;
 }
 
 @media (max-width: 768px) {
@@ -239,25 +269,16 @@ body {
 }
 
 .card-img-top {
-    height: 60%;
+    height: 70%;
     /* Set image height */
     object-fit: obtain;
     /* Ensure the image covers the available space while maintaining aspect ratio */
 }
-
-.card-body {
-    height: 40%;
-    /* Reserve space for the card body */
-    overflow: hidden;
-    /* Prevent text overflow */
-}
-
 .fullscreen-img {
     cursor: pointer;
 }
 
 .modal-body button {
-    background-color: red;
     border-radius: 0;
     opacity: 1;
 }
