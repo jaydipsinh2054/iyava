@@ -39,9 +39,6 @@ body {
 .active {
     background-color: gold;
 }
-.text input ::placeholder{
-    color: #000;
-}
 
 .hero {
     background-color: black;
@@ -61,6 +58,13 @@ body {
 
 .nav-link:hover {
     background-color: gold;
+    box-shadow: 0 0 16px gold;
+}
+
+.footer-link:hover {
+    color: black;
+    background-color: gold;
+    box-shadow: 0 0 16px gold;
 }
 
 .btn i {
@@ -175,6 +179,7 @@ body {
 
 .contact button:hover {
     background-color: gold;
+    box-shadow: 0 0 10px gold;
 }
 
 /* Footer Styles */
@@ -193,9 +198,9 @@ body {
     color: white;
 }
 .d-flex a{
-    color: white;
+    color: black;
     border: none;
-    background-color: #000; 
+    background-color: gold; 
 }
 .d-flex a:hover {
     background-color: gold;
@@ -212,7 +217,7 @@ body {
 .d-flex button:hover {
     background-color: gold;
     border: none;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px gold;
     color: #000;
 }
 
@@ -243,9 +248,9 @@ body {
 }
 
 .footer-icons a:hover {
-    font-size: 2rem;
     color: #000;
     background-color: gold;
+    box-shadow: 0 0 15px gold;
 }
 
 @media (max-width: 768px) {
