@@ -35,51 +35,318 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
+              <a class="nav-link active" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <h2 class="text-center pt-4">Gallery</h2>
       <div class="container">
-        <h2>Contact Us</h2>
         <div class="row">
-          <div class="col-md-3 contact-info">
-            <h4>Get in touch</h4>
-            <p>We'd love to hear from you!</p>
-          </div>
-          <div class="col-md-9">
-            <form action="index.html">
-              <div class="row">
-                <div class="col-md-6 text">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                  />
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/1.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Village Field</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/1.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/1.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
                 </div>
               </div>
-              <textarea
-                class="form-control"
-                rows="5"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn mt-3 text-dark">Submit</button>
-            </form>
+            </div>
           </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/2.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Temple Of Matri Maa</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/2.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/2.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/3.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lake</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/3.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/3.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/4.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lake</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/4.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/4.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/5.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Village Field</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/5.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/5.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/6.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lake</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/6.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/6.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/7.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">School 7-8</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/7.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/7.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/8.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">School 1-6</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/8.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/8.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/9.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">School Office</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/9.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/9.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/10.jpg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lakshmanbha Partapba Ni Meldi Maa</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/10.jpg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/10.jpg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="public/images/1.jpeg"
+                class="card-img-top"
+                alt="Gallery Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hospital</h5>
+                <div class="d-flex justify-content-between">
+                  <a href="public/images/1.jpeg" download class="btn">
+                    <i class="fa fa-download"></i> Download
+                  </a>
+                  <button
+                    class="btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                    data-image-src="public/images/1.jpeg"
+                  >
+                    <i class="fa fa-eye"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -120,7 +387,7 @@
           </a>
         </div>
       </div>
-      
+
       <div class="footer-right">
         <p class="footer-company-about">
           <span>This Is About the Iyava</span>. <br />
@@ -140,44 +407,55 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content border-0">
+          <div class="modal-body p-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <img
+              src=""
+              alt="Image Preview"
+              id="modalImage"
+              class="img-fluid fullscreen-img"
+              style="width: 100%; height: 450px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector("form");
-        const nameField = form.querySelector('input[placeholder="Your Name"]');
-        const emailField = form.querySelector(
-          'input[placeholder="Your Email"]'
-        );
-        const messageField = form.querySelector(
-          'textarea[placeholder="Your Message"]'
-        );
-
-        form.addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          // Simple validation
-          const name = nameField.value.trim();
-          const email = emailField.value.trim();
-          const message = messageField.value.trim();
-
-          if (!name || !email || !message) {
-            alert("Please fill in all fields.");
-            return;
-          }
-
-          // Email validation regex
-          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-          if (!email.match(emailPattern)) {
-            alert("Please enter a valid email address.");
-            return;
-          }
-
-          alert(
-            "Thank you, " + name + "! Your message has been sent successfully."
-          );
-
-          form.reset();
+      const viewButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
+      viewButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const imageSrc = this.getAttribute("data-image-src");
+          document.getElementById("modalImage").src = imageSrc;
         });
       });
+
+      // Fullscreen functionality
+      document
+        .getElementById("modalImage")
+        .addEventListener("click", function () {
+          if (this.requestFullscreen) {
+            this.requestFullscreen();
+          } else if (this.mozRequestFullScreen) {
+            // Firefox
+            this.mozRequestFullScreen();
+          } else if (this.webkitRequestFullscreen) {
+            // Chrome, Safari and Opera
+            this.webkitRequestFullscreen();
+          } else if (this.msRequestFullscreen) {
+            // IE/Edge
+            this.msRequestFullscreen();
+          }
+        });
     </script>
 
     <script src="js/bootstrap.min.js"></script>
