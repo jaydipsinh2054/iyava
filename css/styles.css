@@ -60,12 +60,7 @@ body {
 .nav-link:hover {
     background-color: gold;
     box-shadow: 0 0 16px gold;
-}
-
-.footer-link:hover {
-    color: black;
-    background-color: gold;
-    box-shadow: 0 0 16px gold;
+    transition: background-color 0.1s ease;
 }
 
 .btn i {
@@ -120,6 +115,32 @@ body {
     border-top: 1px solid gold;
 }
 
+.d-flex a {
+    color: black;
+    border: none;
+    background-color: gold;
+}
+
+.d-flex a:hover {
+    background-color: gold;
+    border: none;
+    box-shadow: 0 0 15px black;
+    color: #000;
+}
+
+.d-flex button {
+    color: white;
+    border: none;
+    background-color: #000;
+}
+
+.d-flex button:hover {
+    background-color: gold;
+    border: none;
+    box-shadow: 0 0 15px gold;
+    color: #000;
+}
+
 .gallery h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -144,6 +165,55 @@ body {
 .card-body {
     padding: 20px;
     text-align: center;
+}
+
+.card {
+    height: 400px;
+    /* Set fixed height for cards */
+}
+
+img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.card-img-top {
+    height: 70%;
+    object-fit: obtain;
+}
+
+.fullscreen-img {
+    cursor: pointer;
+}
+
+.modal-body button {
+    border-radius: 0;
+    opacity: 1;
+}
+
+.modal-content {
+    border-radius: 0;
 }
 
 /* Contact Section */
@@ -183,6 +253,8 @@ body {
     box-shadow: 0 0 10px gold;
 }
 
+
+
 /* Footer Styles */
 .footer-distributed {
     background-color: #000;
@@ -198,28 +270,16 @@ body {
     text-decoration: none;
     color: white;
 }
-.d-flex a{
-    color: black;
-    border: none;
-    background-color: gold; 
-}
-.d-flex a:hover {
-    background-color: gold;
-    border: none;
-    box-shadow: 0 0 15px black;
-    color: #000;
+
+.footer-link {
+    padding: 2px;
 }
 
-.d-flex button{
-    color: white;
-    border: none;
-    background-color: #000;
-}
-.d-flex button:hover {
+.footer-link:hover {
+    color: black;
+    padding: 2px;
     background-color: gold;
-    border: none;
-    box-shadow: 0 0 15px gold;
-    color: #000;
+    box-shadow: 0 0 16px gold;
 }
 
 .footer-left h3 {
@@ -236,7 +296,7 @@ body {
 
 .footer-icons a {
     display: inline-block;
-    background-color: #333;
+    background-color: #000;
     color: white;
     width: 40px;
     font-size: 1.5rem;
@@ -244,9 +304,21 @@ body {
     text-align: center;
     line-height: 40px;
     margin-right: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.1s ease;
 }
+
+.footer-center .add a:hover {
+    color: gold;
+}
+
+.footer-center .cont a:hover {
+    color: gold;
+}
+
+.footer-center .mail a:hover {
+    color: gold;
+}
+
 
 .footer-icons a:hover {
     color: #000;
@@ -269,29 +341,8 @@ body {
     }
 }
 
-.card {
-    height: 400px;
-    /* Set fixed height for cards */
-}
 
-.card-img-top {
-    height: 70%;
-    /* Set image height */
-    object-fit: obtain;
-    /* Ensure the image covers the available space while maintaining aspect ratio */
-}
-.fullscreen-img {
-    cursor: pointer;
-}
-
-.modal-body button {
-    border-radius: 0;
-    opacity: 1;
-}
-
-.modal-content {
-    border-radius: 0;
-}
+/* fonts*/
 
 /* latin-ext */
 @font-face {
