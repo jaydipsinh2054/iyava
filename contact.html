@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iyava</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -51,10 +51,6 @@
         <h2>Contact Us</h2>
         <div class="row">
           <div class="col-md-3 contact-info">
-            <img
-              src="https://image.ibb.co/kUASdV/contact-image.png"
-              alt="Contact Us"
-            />
             <h4>Get in touch</h4>
             <p>We'd love to hear from you!</p>
           </div>
@@ -93,7 +89,8 @@
       <div class="footer-left">
         <h3>Iya<span>va</span></h3>
         <p class="footer-links">
-          <a class="footer-link" href="index.html">Home</a> | <a class="footer-link" href="about.html">About</a> |
+          <a class="footer-link" href="index.html">Home</a> |
+          <a class="footer-link" href="about.html">About</a> |
           <a href="gallery.html" class="footer-link">Gallery</a> |
           <a href="contact.html" class="footer-link">Contact</a>
         </p>
@@ -101,22 +98,29 @@
       </div>
 
       <div class="footer-center">
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Iyava</span> Sanand, Ahemedabad</p>
+        <div class="add">
+          <a
+            href="https://www.google.com/maps?q=Iyava+Sanand+Ahmedabad"
+            target="_blank"
+          >
+            <i class="fa fa-map-marker"></i>
+            <p><span>Iyava</span> Sanand, Ahmedabad</p>
+          </a>
         </div>
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+91 88496 54926</p>
+        <div class="cont">
+          <a href="tel:+918849654926">
+            <i class="fa fa-phone"></i>
+            <p>+91 88496 54926</p>
+          </a>
         </div>
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p>
-            <a href="mailto:jbvaghela6624@gmail.com">jbvaghela6624@gmail.com</a>
-          </p>
+        <div class="mail">
+          <a href="mailto:jbvaghela6624@gmail.com">
+            <i class="fa fa-envelope"></i>
+            <p>jbvaghela6624@gmail.com</p>
+          </a>
         </div>
       </div>
-
+      
       <div class="footer-right">
         <p class="footer-company-about">
           <span>This Is About the Iyava</span>. <br />
@@ -137,38 +141,43 @@
       </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
-  const nameField = form.querySelector('input[placeholder="Your Name"]');
-  const emailField = form.querySelector('input[placeholder="Your Email"]');
-  const messageField = form.querySelector('textarea[placeholder="Your Message"]');
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const nameField = form.querySelector('input[placeholder="Your Name"]');
+        const emailField = form.querySelector(
+          'input[placeholder="Your Email"]'
+        );
+        const messageField = form.querySelector(
+          'textarea[placeholder="Your Message"]'
+        );
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    
-    // Simple validation
-    const name = nameField.value.trim();
-    const email = emailField.value.trim();
-    const message = messageField.value.trim();
-    
-    if (!name || !email || !message) {
-      alert("Please fill in all fields.");
-      return;
-    }
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
 
-    // Email validation regex
-    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if (!email.match(emailPattern)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
+          // Simple validation
+          const name = nameField.value.trim();
+          const email = emailField.value.trim();
+          const message = messageField.value.trim();
 
-    alert("Thank you, " + name + "! Your message has been sent successfully.");
-    
-    form.reset();
-  });
-});
+          if (!name || !email || !message) {
+            alert("Please fill in all fields.");
+            return;
+          }
 
+          // Email validation regex
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          alert(
+            "Thank you, " + name + "! Your message has been sent successfully."
+          );
+
+          form.reset();
+        });
+      });
     </script>
 
     <script src="js/bootstrap.min.js"></script>
