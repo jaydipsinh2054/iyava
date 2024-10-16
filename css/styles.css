@@ -147,7 +147,6 @@ body {
 }
 
 .card {
-    height: 400px;
     opacity: 1;
     transition: transform 0.5s ease;
 }
@@ -158,18 +157,13 @@ body {
 }
 
 .card-img-top {
-    height: 60%;
+    height: 200px;
     object-fit: cover;
 }
 
 .card-body {
     padding: 20px;
     text-align: center;
-}
-
-.card {
-    height: 400px;
-    /* Set fixed height for cards */
 }
 
 img {
@@ -196,11 +190,6 @@ img {
     .modal-content {
         width: 100%;
     }
-}
-
-.card-img-top {
-    height: 70%;
-    object-fit: obtain;
 }
 
 .fullscreen-img {
