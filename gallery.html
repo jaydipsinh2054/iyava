@@ -60,7 +60,7 @@
     <section class="gallery" id="gallery">
       
       <h2 class="text-center pt-4">Temple Of Matri Maa</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -115,7 +115,7 @@
       </div>
 
       <h2 class="text-center pt-4">Nilkanth Mahadev Iyava</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -170,7 +170,7 @@
       </div>
 
       <h2 class="text-center pt-4">Temple Of Hanumanji Dada</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -189,7 +189,7 @@
       </div>
 
       <h2 class="text-center pt-4">Temple Of Surapura Dada</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -208,7 +208,7 @@
       </div>
 
       <h2 class="text-center pt-4">Temple Of Vagheshwari Maa</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -227,7 +227,7 @@
       </div>
 
       <h2 class="text-center pt-4">Lake Of Iyava</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -282,7 +282,7 @@
       </div>
 
       <h2 class="text-center pt-4">School Of Iyava</h2>
-      <div class="container">
+      <div class="container-fluid" style="border-bottom: 1px solid gold;">
         <div class="row">
 
           <!-- Card 1 -->
@@ -338,7 +338,7 @@
 
 
       <h2 class="text-center pt-4">Village Field</h2>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
 
           <!-- Card 1 -->
@@ -360,8 +360,8 @@
 
     <!-- Contact -->
     <section
-      class="container-fluid mb-5 text-white text-center"
-      style="background-color: #000"
+      class="container-fluid text-white text-center"
+      style="border-top: 1px solid gold;"
     >
       <div class="row">
         <h1 class="mt-3 mb-3">Contact Us</h1>
@@ -379,7 +379,7 @@
         </div>
 
         <!-- Contact Info -->
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center mb-3">
           <h4 class="text-uppercase mb-4 text-center">More Info</h4>
           <a href="tel:+918849654926" style="text-decoration: none">
             <div
@@ -509,35 +509,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      const viewButtons = document.querySelectorAll('[data-bs-toggle="modal"]');
-      viewButtons.forEach((button) => {
-        button.addEventListener("click", function () {
-          const imageSrc = this.getAttribute("data-image-src");
-          document.getElementById("modalImage").src = imageSrc;
-        });
-      });
-
-      // Fullscreen functionality
-      document
-        .getElementById("modalImage")
-        .addEventListener("click", function () {
-          if (this.requestFullscreen) {
-            this.requestFullscreen();
-          } else if (this.mozRequestFullScreen) {
-            // Firefox
-            this.mozRequestFullScreen();
-          } else if (this.webkitRequestFullscreen) {
-            // Chrome, Safari and Opera
-            this.webkitRequestFullscreen();
-          } else if (this.msRequestFullscreen) {
-            // IE/Edge
-            this.msRequestFullscreen();
-          }
-        });
-    </script>
-
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
